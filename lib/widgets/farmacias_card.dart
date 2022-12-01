@@ -107,7 +107,7 @@ class _BackgroundImage extends StatelessWidget {
       borderRadius: BorderRadius.circular(25),
       child: Container(
         width: double.infinity,
-        height: 100,
+        height: 300,
         child: url == "" || url == null
             ? Image(image: AssetImage('assets/no-image.png'), fit: BoxFit.cover)
             : FadeInImage(

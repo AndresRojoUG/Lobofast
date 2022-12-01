@@ -17,7 +17,7 @@ class ConsolasPage extends StatelessWidget {
     return Scaffold(
     
       appBar: AppBar(
-        title: Text('Comida'),
+        title: Text('Consolas'),
       ),
       drawer: MenuLateral(),
       backgroundColor: Color.fromARGB(255, 38, 182, 25),
@@ -27,7 +27,7 @@ class ConsolasPage extends StatelessWidget {
             onTap: () {
               productoService.productoSeleccionado =
                   productoService.productos[index].copy();
-              Navigator.pushNamed(context, 'consolas_card');
+              Navigator.pushNamed(context, 'consola_card');
             },
             child: ConsolasCard(
               producto: productoService.productos[index],
@@ -38,7 +38,7 @@ class ConsolasPage extends StatelessWidget {
         onPressed: () {
           productoService.productoSeleccionado =
               new Consolas(disponible: false, nombre: '', precio: 0);
-          Navigator.pushNamed(context, 'consolas_card');
+          Navigator.pushNamed(context, 'consola_card');
         },
       ),
     );

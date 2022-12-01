@@ -17,7 +17,7 @@ class FarmaciasPage extends StatelessWidget {
     return Scaffold(
     
       appBar: AppBar(
-        title: Text('Comida'),
+        title: Text('Farmacias'),
       ),
       drawer: MenuLateral(),
       backgroundColor: Color.fromARGB(255, 38, 182, 25),
